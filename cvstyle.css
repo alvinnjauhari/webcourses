@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap');
+
+:root{
+    --main-color : #3a4652 ;
+    --header-color : #000;
+    --body-color : #fff;
+    --header-font-color : #007b3c;
+    --shadow : 0 2px 2px rgb(0 0 0 / 0.5);
+
+    --heading-font : "Fira Code" , monospace;
+    --body-font : "Open Sans" , sans-serif;
+}
+
+body{
+    background-color: var(--body-color);
+    font-family: var(--body-font);
+    width: 100%;
+    margin: 0 auto;
+    min-height: 2200px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+.header-bar{
+    background-color: var(--header-color);
+    width: 100%;
+    margin: auto;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-bar .header{
+    font-family: var(--heading-font);
+    padding: 2pc 2pc;
+    font-size: 150%;
+    font-weight: 1000;
+    color: var(--header-font-color);
+}
+
+.header-bar .menu{
+    display: flex;
+}
+
+.header-bar .menu a{
+    font-family: var(--heading-font);
+    color: #007b3c;
+    align-items: center;
+}
+
+.header-bar .menu .menuitem{
+    margin: 0 40px;
+    padding: 20 40px;
+    font-size: 120%;
+}
+.header-bar .menu a img{
+    margin: 0 20px;
+}
+
+.hero{
+    min-height: 100vh;
+    background-image: url(/img/bg.jpg.jpg);
+    color: #fff;
+    text-shadow: var(--shadow);
+    font-weight: bolder;
+}
+
+.hero h1{
+    font-family: var(--heading-font);
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.hero p{
+    font-weight: bold;
+}
+
+.hero a{
+    background-color: white;
+    font-weight: bold;
+}
+
+.profile {
+    background-color: rgb(48, 48, 48);
+    padding: 20px 0; /* Tambahkan padding di atas dan bawah */
+}
+
+.profile .header {
+    font-family: var(--heading-font);
+    color: #007b3c;
+    text-align: center; /* Pusatkan teks header */
+    padding: 4pc;
+}
+
+.profile .profile-content {
+    display: flex;
+    align-items: flex-start; /* Pusatkan vertikal ke atas */
+    justify-content: space-around; /* Ruang sekitar elemen-elemen */
+    max-width: 1200px; /* Batasi lebar maksimum */
+    margin: 0 auto; /* Pusatkan horizontal */
+    padding: 20px;
+}
+
+.profile .kiri {
+    width: 30%;
+    text-align: center; /* Pusatkan elemen ke tengah */
+    display: flex; /* Gunakan flexbox untuk tata letak */
+    flex-direction: column; /* Tampilkan elemen dalam satu kolom */
+    align-items: center; /* Pusatkan vertikal */
+}
+
+.foto-profil {
+    width: 300px; /* Lebar gambar */
+    height: 300px; /* Tinggi gambar */
+    border-radius: 50%; /* Mengubah gambar menjadi lingkaran sempurna */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Tambahkan bayangan */
+    object-fit: cover; /* Memastikan gambar memenuhi lingkaran */
+    margin-bottom: 20px; /* Jarak bawah gambar dari teks */
+}
+
+
+.profile .kanan {
+    width: 65%; /* Lebar elemen teks */
+    font-family: var(--body-font);
+    color: #fff;
+    text-align: justify;
+}
+
+/* Untuk teks yang panjang */
+.profile .kanan pre {
+    white-space: pre-wrap;
+    padding: 40px;
+    font-size: 1pc;
+}
+
+.template{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.template h1{
+    color: green;
+    text-align: center;
+    margin: 80px;
+}
+
+.template a{
+    color: #5673C8;
+}
+
+.template a:hover{
+    color: lightblue;
+}
+
+.template p{
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+        overflow: hidden;
+}
+
+.template .row {
+    margin: 0px -18px;
+        padding: 8px;
+}
+
+.template .row > .column{
+    padding: 6px;
+}
+
+.template .column{
+    float: left;
+    width: 25%;
+}
+
+.template .row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.template .content{
+    background-color: white;
+        padding: 10px;
+        border: 1px solid gray;
+}
